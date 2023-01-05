@@ -1,0 +1,90 @@
+Class:
+	()=>this.xx(e) attribute of tag
+	this.xx props of Component
+ Theme_Material_UI: 
+	createTheme => <ThemeProvider theme=theme>(import from MUI) =>WithStyle =(theme)=>({color:...})
+ React_Context:
+	x = React.createContext() => <x.Provider value={this.state}> 
+		=> <x.Consummer>{value1=><h2>this is value1: {value1} </h2>}</x.Consummer>
+Hook:?
+	ReactRouter only get Param in hook
+		C1.const [searchParam,setParam] = useSearchParam() ;; <h1>{searchParam.get('id')}</h1>
+		C2.const useQuery = () => {
+       			const { search } = useLocation(); // location is object include url
+        	return React.useMemo(() => new URLSearchParams(search), [search]);
+      		}
+    		const query = useQuery(); <h1>query.get('id')}</h1>
+
+--------------
+repositive
+@media --
+	@media only screen and (max-with:1500px) and (min-with:991px)
+
+*** Lodash
+
+Tuần 1	
+Chủ đề	Công việc	Thời lượng (h)	Mục tiêu đạt được
+kiến thức cơ bản khi vào dự án	Tìm hiểu về git , git flow	8h	Hiểu về cách quản lý code của git , học cách clone project về, add → commit → push , xử lý khi code bị conflig 
+git flow: hiểu về feature , release , hotfix , cách đặt tên các feature
+Nâng cao: tìm hiểu thêm về source tree 
+
+Tìm hiểu về html , css , bootstrap	16h	Hiểu cơ bản về css và boostrap , biết phân bố cục cho web app
+Bài tập: làm 1 trang web có header ( bên trái là logo, bên phải là thông tin user) và sidebar ( gồm list các trang của trang web vd [ dashboard,product,package ] )
+Nâng cao: kết hợp với thư viện React router để link đến các trang 
+
+Tìm hiểu về react: class component và function component, state và props , file jsx là gì? file jsx khác gì với tsx.
+Tìm hiểu về type script	4h	Nắm được điểm khác nhau  class component và function component và  khai báo type script
+
+Tìm hiểu về hook 	4h	Ứng dụng được các hàm hook cơ bản như useState , useEffect vào thực tế
+
+Tìm hiểu về các utility library ( như lodash , dayjs )	8h	Nắm được tác dụng của lodash và dayjs , ứng dụng nó được vào thực tế hay các ví dụ
+
+Tuần 2	
+
+Chủ đề	Công việc	Thời lượng (h)	Mục tiêu đạt được
+
+tìm hiểu và làm việc với các thư viện form( react-hook-form, formik )	8h	nắm được luồng của form , làm thế nào để truyền dữ liệu vào form , xử lý trong các input thay đổi , submit form
+
+làm việc thư viện form nâng cao	8h	nắm được cách làm việc của form array , validate các giá trị
+
+tìm hiểu về redux	16h	nắm được luồng của redux , thực hiện được ví dụ : thêm sửa xóa bằng redux
+
+tìm hiểu về useContext	8h	hiểu tác dụng của useContext , làm ví dụ tương tự redux từ đó đưa ra nhận xet ưu nhược điểm useContext và redux
+
+Tuần 3	
+
+Chủ đề	Công việc	Thời lượng (h)	Mục tiêu đạt được
+
+Tìm hiểu restfull api và thử viện axios 	2h	hiểu về các gọi api
+
+Thực hiện giao tiếp với be ( đăng nhập , thêm sửa xóa sản phẩm ) qua api	6h	thực hành nhuần nhuyễn các gọi api , kết hợp chức năng đăng nhập
+
+Thêm sửa xóa vào localstorage và sessionStorage 	4h	thực hiện các giao tiếp với localstorage và session storage, biết được khi nào thì lưu vào localStore kh
+
+nâng cao: gửi file , ảnh tới server .
+
+tải file , ảnh từ server 
+
+8h	có thể gửi ảnh hay tải ảnh từ server về
+
+tìm hiểu về i18n => áp dụng vào project 	4h	sử dụng thành thục translate
+
+Tuần 4	
+
+
+Chủ đề	Công việc	Thời lượng (h)	Mục tiêu đạt được
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
