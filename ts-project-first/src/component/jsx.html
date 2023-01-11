@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    </head>
+    <body>
+        <div id="'root">
+            <h1>ADD React to WEBSITE</h1>
+        </div>
+        <script type="text/babel">
+            const coures = [
+                {
+                    name : 'HTML,CSS',
+                },
+                {
+                    name : 'Responsive web design',
+                },
+                {
+                    name : 'ReactJS'
+                }
+            ];
+            const jsx = (
+                <ul>  
+                    <li>HTML,CSS</li>
+                    <li>Responsive web design</li>
+                    <li>ReactJS</li>
+                </ul>
+            )
+
+            ReactDOM.render(jsx,document.getElementById('root'))
+        </script>
+    </body>
+    <footer>
+
+    </footer>
+</html>

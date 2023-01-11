@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import NavBar from './component/navBar-component/NavBar';
 // let name:String = "NTD";
 // let age:number = 20;
 // let sleep:boolean=false;
@@ -29,6 +30,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+        <NavBar/>
     </div>
   );
 }
