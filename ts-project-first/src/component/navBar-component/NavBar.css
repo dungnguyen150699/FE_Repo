@@ -1,10 +1,31 @@
 .flex-container {
     display: flex;
-    /* background-color: DodgerBlue; */
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    /* align-items: flex-end;
+    align-content: center; */
   }
 
 .link{
     text-decoration: none ;
     color: inherit;
     font-size: 18px;
-  }
+}
+.linkActive{
+  color: rgb(194, 187, 187);
+}
+
+.boxComponent:hover{
+  /* background-color: #777; */
+  color: rgb(194, 187, 187);
+}
+
+.boxComponent{
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+}
+

@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import NavBar from './component/navBar-component/NavBar';
+import RoutesComponent from './component/navBar-component/router-component/RoutesComponent';
+import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 // let name:String = "NTD";
 // let age:number = 20;
 // let sleep:boolean=false;
@@ -30,7 +32,10 @@ import NavBar from './component/navBar-component/NavBar';
 function App() {
   return (
     <div className="App">
+      <Router>
         <NavBar/>
+        <RoutesComponent/>
+      </Router>
     </div>
   );
 }

@@ -12,8 +12,7 @@ export default function LinksComponent() {
           key={index}
           sx={
             { 
-              p: 2,
-              // border: "1px dashed grey"  
+              p: 2
             }
           }
           page={page}
