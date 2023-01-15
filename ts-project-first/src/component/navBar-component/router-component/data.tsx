@@ -5,6 +5,7 @@ import BookComponent from "../../book-component/BookComponent";
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import CopyrightIcon from '@mui/icons-material/Copyright';
+import TemporaryDrawer from "../toggle-navbar-component/TemporaryDrawer";
 
 export const pages: page[] = [
     {
@@ -24,5 +25,11 @@ export const pages: page[] = [
         link: "/author",
         element: <AuthorComponent/>,
         icon:<CopyrightIcon/>
+    },
+    {
+        name: "TemporaryDrawer",
+        link: "Drawer",
+        element: <TemporaryDrawer/>,
+        icon: undefined
     }
   ];

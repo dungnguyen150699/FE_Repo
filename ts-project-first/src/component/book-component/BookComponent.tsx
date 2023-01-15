@@ -16,7 +16,10 @@ export default function BookComponent(){
     return (
         <Container maxWidth="xl" style={{marginTop:"50px"}}>
             <Grid container spacing={2}>
-                <Grid item xs={8}>
+                {
+                    
+                }
+                <Grid item xs={4}>
                     <Item>xs=8</Item>
                 </Grid>
                 <Grid item xs={4}>
@@ -24,9 +27,6 @@ export default function BookComponent(){
                 </Grid>
                 <Grid item xs={4}>
                     <Item>xs=4</Item>
-                </Grid>
-                <Grid item xs={8}>
-                    <Item>xs=8</Item>
                 </Grid>
             </Grid>
         </Container>

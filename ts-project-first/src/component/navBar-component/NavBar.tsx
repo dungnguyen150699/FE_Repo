@@ -15,7 +15,7 @@ export default function NavBar(){
     linkActive : string
   }>({linkActive : '/'})
     return (
-        <Box sx={{ flexGrow: 1 }}>
+        <Box sx={{ flexGrow: 1 }} className="navBar">
           <AppBar position="static">
             <Toolbar>
               <IconButton
@@ -26,7 +26,6 @@ export default function NavBar(){
                 sx={{ mr: 2 }}
               >
               <MenuIcon>
-                <TemporaryDrawer></TemporaryDrawer>
               </MenuIcon>
               </IconButton>
               <Typography 

@@ -30,9 +30,15 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
     }
 */
 function App() {
+  if(!localStorage.getItem('user')) return (
+    <div className='App'>
+      <Lo
+    </div>
+  )
+
   return (
     <div className="App">
-      <Router>
+       <Router>
         <NavBar/>
         <RoutesComponent/>
       </Router>

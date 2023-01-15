@@ -14,7 +14,6 @@ function BoxComponent(props : {
     },
     page :page
 }){
-    
     let {sx,page} = props;
     return (
         <Box sx={sx} className="boxComponent">
