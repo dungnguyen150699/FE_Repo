@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -8,7 +8,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import LinksComponent from './router-component/LinksComponent';
-import TemporaryDrawer from './toggle-navbar-component/TemporaryDrawer';
+import { Link } from 'react-router-dom';
+import * as React from 'react';
 
 export default function NavBar(){
   const [stateNavBar,setSateNavBar] = useState<{
@@ -36,7 +37,11 @@ export default function NavBar(){
               >
               <LinksComponent></LinksComponent>
               </Typography>
-              <Button color="inherit">Login</Button>
+              <Button color="inherit">
+                <Link to="/login">
+                  Login
+                </Link>
+              </Button>
             </Toolbar>
           </AppBar>
         </Box>

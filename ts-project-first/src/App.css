@@ -13,3 +13,11 @@
     justify-content: stretch;
   }
 }
+
+.s-alert-box {
+  min-width: 250px;
+}
+
+.s-alert-close::before, .s-alert-close::after {
+  width: 2px;
+}

@@ -6,12 +6,14 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 import TemporaryDrawer from "../toggle-navbar-component/TemporaryDrawer";
+import Login from "../../../login/Login";
+import * as React from 'react';
 
 export const pages: page[] = [
     {
         name: "Book",
         link: "/",
-        element: < BookComponent/>,
+        element: <BookComponent/>,
         icon: <LibraryBooksIcon/>
     },
     { 

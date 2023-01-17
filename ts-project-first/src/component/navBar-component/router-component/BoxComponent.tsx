@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
     BrowserRouter as Router,
     Routes,
@@ -8,6 +8,8 @@ import {
 } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import {page} from '../../../types/page'
+
+
 function BoxComponent(props : {
     sx :{
         p: number,

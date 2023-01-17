@@ -2,7 +2,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
-import React from 'react';
+import * as React from 'react';
 
 export default function BookComponent(){
     const Item = styled(Paper)(({ theme }) => ({
