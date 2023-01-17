@@ -19,8 +19,8 @@ export default function OAuth2RedirectHandler() {
             const error = getUrlParameter('error');
             if(token){
                 localStorage.setItem(ACCESS_TOKEN, token);
-                console.log("set Token")
-                navigate('/book');
+                // console.log("set Token")
+                // navigate('/book');
             }else{
                 navigate('/login');
             }

@@ -3,6 +3,8 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import * as React from 'react';
+import fbLogo from '../../img/fb-logo.png';
+import bookImg from '../../img/book.jpg';
 
 export default function BookComponent(){
     const Item = styled(Paper)(({ theme }) => ({
@@ -19,15 +21,48 @@ export default function BookComponent(){
                 {
                     
                 }
-                <Grid item xs={4}>
-                    <Item>xs=8</Item>
+                <Grid item xs={3}>
+                    <img src={bookImg} style={
+                        {
+                            width: '235px',
+                            height: '220px'
+                        }
+                } ></img>
                 </Grid>
-                <Grid item xs={4}>
-                    <Item>xs=4</Item>
+                <Grid item xs={3}>
+                    <img src={bookImg} style={
+                        {
+                            width: '235px',
+                            height: '220px'
+                        }
+                } ></img>
+                
                 </Grid>
-                <Grid item xs={4}>
-                    <Item>xs=4</Item>
+                <Grid item xs={3}>
+                    <img src={bookImg} style={
+                        {
+                            width: '235px',
+                            height: '220px'
+                        }
+                } ></img>
                 </Grid>
+                <Grid item xs={3}>
+                    <img src={bookImg} style={
+                        {
+                            width: '235px',
+                            height: '220px'
+                        }
+                } ></img>
+                </Grid>
+                <Grid item xs={3}>
+                    <img src={bookImg} style={
+                        {
+                            width: '235px',
+                            height: '220px'
+                        }
+                } ></img>
+                </Grid>
+                
             </Grid>
         </Container>
     )

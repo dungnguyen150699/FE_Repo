@@ -16,7 +16,7 @@ function App() {
       navigate("/")
     }
   }, [])
-  console.log(localStorage.getItem(ACCESS_TOKEN))
+  // console.log(localStorage.getItem(ACCESS_TOKEN))
   return (
 
     <div className="App">
