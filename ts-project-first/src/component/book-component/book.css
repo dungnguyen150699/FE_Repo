@@ -1,0 +1,38 @@
+.container--book{
+    display: flex;                  /* Kích hoạt flexbox cho phần tử chứa */
+
+    flex-direction: row;            /* Thiết lập hướng chính */
+    flex-wrap: nowrap;              /* Thiết lập chế độ wrap, khi các phần tử vượt qua kích thước hướng chính*/
+    justify-content: flex-end;      /* Căn chỉnh nội dung bên trong container có flexbox*/
+    align-items: stretch;           /* Căn chỉnh phần tử con theo hướng vuông góc hướng chính*/
+    align-content: stretch;         /* Căn chỉnh hàng (cột) theo hướng vuông góc (chỉ hiệu lực khi nhiều hàng hoặc cột)*/
+
+    padding:    5px;
+    min-width:  320px;
+    min-height: 320px;
+    margin:     auto;
+}
+
+.container--book .grid{
+    position: relative;
+    padding: 20px;
+    margin: 1px;
+    font-weight: bold;
+    background: #d33b33;
+}
+
+.container--book .btn-addcart{
+    position: relative;
+    padding:5px 1rem 5px 1rem;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(11, 139, 11);
+    margin: auto;
+    border-radius: 1rem;
+    bottom: 10px;
+}
+
+.container--book .btn-addcart:hover{
+    background-color: rgb(11, 139, 11,0.2);
+}

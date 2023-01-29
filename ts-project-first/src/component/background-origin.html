@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </header>
+    <body>
+        <div class="box">
+            This is content f8 learing css box-sidding
+        </div>
+        <style>
+            html, body{
+                margin: 0;
+            }
+
+            .box{
+                width: 100%;
+                height: 100vh;
+                border: 20px dashed #ccc;
+                background-image: 
+                /* url(https://thiepgialong.com/upload/images/thiep-tet-2023-gl-2941.jpg), */
+                url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhrj2s9rPX_UvC1F1nfkchk9f94fx3y9MOXQ&usqp=CAU);
+                /* background-size: 
+                - width height
+                - contain: not ensure image view 100% in monitor and select dimension highest
+                - cover: not ensure image alway view 100% and select dimension highest.
+                */
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                /* same background-clip */
+                background-origin: padding-box;
+            }
+
+        </style>
+    </body>
+</html>
