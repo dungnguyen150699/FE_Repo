@@ -3,6 +3,8 @@
     --white-color:#fff;
     --black-color:#000;
     --text-color:#333;
+    --border-color:#dbdbdb;
+    --primary-color: rgb(220, 30, 30);
 }
 
 *{
@@ -34,4 +36,37 @@ p{
 .grid__row{
     display: flex;
     flex: wrap;
+}
+
+.modalPopUp{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+}
+
+.modalPopUp__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalPopUp__body{
+    /* Thực tế ko cần viết context nó sẽ to ra (thêm padding vào) */
+    /* width: 400px;
+    height: 400px; */
+    background-color: var(--white-color);
+    margin: auto;
+    /* Nếu cái này ko để relative thì nó sẽ nằm dưới 
+    class:  modalPopUp__overlay
+    theo như a ý giải thích thì viết sau nó sẽ hiện lên trên
+    z-index cả 2 class này và class modalPopUp__overlay = 0 nên là sau nó lên đầu
+    */
+    position: relative;
+    /* Set ở đây cho chắc chắn */
+    z-index: 1;
+    border-radius: 5px;
 }
