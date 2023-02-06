@@ -154,17 +154,53 @@ class header_qr
 
 .header__notify, .header__notify:hover {
     position: absolute;
-    height: 14px;
     margin-left: 11px;
     width: 404px;
-    top:100%;
+    top:120%;
     right: 0;
     background-color: var(--white-color) !important;  
+    box-shadow: 2px 2px;
+}
+
+.header__notify{
+    display: block;
+    box-sizing: border-box;
+    transform-origin: calc(100% - 20px) top;
+    animation: headerNotifyGrowth ease-in 0.2s;
+    /* visibility: hidden; */
+    will-change: opacity, transform;
+    display: none;
+}
+
+.header__notify::before{
+    content: "";
+    border: 20px solid;
+    border-color:  transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top:-25px;
+    right: 1rem;
+}
+
+.header__notify::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    right: 0;
+    top: -20px;
+    /* background-color: red; */
+}
+
+.header__navbar-item:hover .header__notify{
+    /* visibility: visible; */
+    display: block;
 }
 
 .header__notify-header, .header__notify-header:hover{
     /* opacity: 1.0; */
     background-color: inherit;
+    /* border: inherit; */
     /* height: 40px; */
 }
 
@@ -182,7 +218,12 @@ class header_qr
 }
 
 .header__notify-item{
+    background-color: rgb(245, 236, 234);
+    cursor: pointer;
+}
 
+.header__notify-item:hover{
+    background-color: rgb(240, 211, 206);
 }
 
 .header__notify-link{
@@ -208,23 +249,52 @@ class header_qr
     display: block;
     font-size: 1.4rem;
     color: var(--black-color);
-    font-weight: 100;
+    font-weight: 400;
+    line-height: 1.6rem;
 }
 
 .header__notify-description{
     display: block;
-    font-size: 12px;
+    font-size: 14px;
     color: #999;
     line-height: 1.6rem;
+    font-weight: 300;
+    margin:4px 0;
 }
 
+.header__notify-footer{
+    /* text-align: center; */
+    cursor: pointer;
+    /* background-color: rgb(221, 212, 212); */
+    /* border: inherit; */
+    display: flex;
+}
+
+.header__notify-footer-btn{
+    text-decoration: none;
+    line-height: 5px;
+    padding: 1.6rem 1.2rem;
+    color: var(--black-color);
+    margin: auto;
+    font-weight: 400;
+}
+
+.header__notify-footer-btn:hover{
+    color: var(--black-color);
+}
+
+/* .header__notify-header{
+    border: inherit;
+} */
 
 /* Animation */
-@keyframes fadeIn {
+@keyframes headerNotifyGrowth{
     from{
         opacity: 0;
+        transform: scale(0);
     }
     to{
         opacity: 1;
+        transform: scale(1);
     }
 }
