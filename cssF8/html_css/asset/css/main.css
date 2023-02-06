@@ -283,6 +283,284 @@ class header_qr
     color: var(--black-color);
 }
 
+/* Authen modal */
+
+.auth-from{
+    width: 500px;
+    
+}
+
+.auth-form__container{
+    padding: 2rem;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--black-color)
+}
+
+.auth-form__swith-form{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(221, 49, 14);
+    cursor: pointer;
+}
+.auth-form__form{
+    margin-top: 1.6rem;
+}
+
+.auth-form__input{
+    padding-left: 10px;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__aside{
+    margin-top: 14px;
+}
+
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__policy-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(211, 197, 197);
+}
+
+.auth-form__controls{
+    display: flex;
+    justify-content: end;
+}
+
+.auth-form__controls--registry, .auth-form__controls--back{
+    display: inline-block;
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(211, 197, 197); 
+}
+
+.auth-form__controls--back{
+    margin-right: 1.4rem;
+}
+
+.auth-form__controls--registry:hover , .auth-form__controls--back:hover{
+    display: inline-block;
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(211, 197, 197);
+    opacity: 0.7;
+}
+
+
+.auth-form__socials{
+    display: flex;
+}
+
+.btn--with-iconFB, .btn--with-iconGG{
+    display: flex;
+    padding: 1.4rem;
+    margin-right: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.a-link, .a-link:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Selector tới thẻ có cả 2 class 
+    Có 3 class thì cứ chấm tiếp
+*/
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.auth-form__icon-facebook{
+
+}
+
+/* Authen modal */
+
+.auth-from{
+    width: 500px;
+    
+}
+
+.auth-form__container{
+    padding: 2rem;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--black-color)
+}
+
+.auth-form__swith-form{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(221, 49, 14);
+    cursor: pointer;
+}
+.auth-form__form{
+    margin-top: 1.6rem;
+}
+
+.auth-form__input{
+    padding-left: 10px;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    outline: none;
+}
+
+.auth-form__input:focus{
+    border-color: #888;
+}
+
+.auth-form__aside{
+    margin-top: 14px;
+}
+
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__policy-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.btn {
+    display: inline-block;
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(211, 197, 197);
+}
+
+.auth-form__controls{
+    display: flex;
+    justify-content: end;
+}
+
+.auth-form__controls--registry, .auth-form__controls--back{
+    display: inline-block;
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(211, 197, 197); 
+}
+
+.auth-form__controls--back{
+    margin-right: 1.4rem;
+}
+
+.auth-form__controls--registry:hover , .auth-form__controls--back:hover{
+    display: inline-block;
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: rgb(211, 197, 197);
+    opacity: 0.7;
+}
+
+
+.auth-form__socials{
+    display: flex;
+}
+
+.btn--with-iconFB, .btn--with-iconGG{
+    display: flex;
+    padding: 1.4rem;
+    margin-right: 1rem;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+    cursor: pointer;
+}
+
+.a-link, .a-link:hover{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Selector tới thẻ có cả 2 class 
+    Có 3 class thì cứ chấm tiếp
+*/
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.auth-form__icon-facebook{
+
+}
+
 /* .header__notify-header{
     border: inherit;
 } */
