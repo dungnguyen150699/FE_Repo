@@ -10,12 +10,13 @@
     display: flex;  
     box-sizing: border-box;
     justify-content: center;
+    align-items: center;
 }
 
 .logo__tikiImg{
-    padding: 0.5rem;
-    width: 60px;
-    height: 45px;  
+    padding: 0 0.5rem;
+    width: 70px;
+    height: 43px;
 }
 
 .header__navbar-search{
@@ -31,4 +32,46 @@
 
 .header__navbar-links .header__navbar-link{
     padding: 8px 1rem;
+}
+
+.header__navbar-searchs{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 681px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.header__navbar-searchs-item{
+    padding: 0 10px 0 15px;
+}
+
+.header__navbar-search
+/* , .header__navbar-search:focus */
+{
+    width: calc(681px - 48px - 91px);
+    border: none;
+    outline-width: 0;
+}
+
+.header__navbar-search-button{
+    padding: 0 0;
+    width: 100px;
+    height: inherit;
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+.header__navbar-search-button::before{
+    content: "";
+    top: 0px;
+    left: -10px;
+    right: 0px;
+    height: 10px;
+    border: 1px solid black;
+    border-left: 1px solid rgb(221, 221, 227);
+    display: block;
 }

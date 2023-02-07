@@ -1,5 +1,4 @@
 import React from 'react'
-import { Input } from 'antd';
 import './index.css'
 // import img in react
 import logoImg from '../asset/img/logo-tiki.png';
@@ -10,7 +9,11 @@ export default function index() {
         <ul className="header__navbar-list">
             <li className="header__logo">
                 <img src={logoImg} alt='tiki' className='logo__tikiImg'></img>
-                <Input placeholder="Basic usage" className='header__navbar-search'/>
+                <div className="header__navbar-searchs">
+                    <i className="fa-solid fa-magnifying-glass header__navbar-searchs-item"></i>
+                    <input type="text" className='header__navbar-search header__navbar-search-seperate'/>
+                    <input type="button" value="Tìm Kiếm" className="header__navbar-search-button" />
+                </div>
             </li>
             <div className="header__navbar-links">
                 <li className="header__navbar-link header__navbar-home">
