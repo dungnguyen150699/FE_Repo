@@ -1,0 +1,20 @@
+/* declare variable */
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+    --primary-color: rgb(220, 30, 30);
+}
+
+html{
+    /* default fontsize: 16px -> 62% = 10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 1rem;
+}

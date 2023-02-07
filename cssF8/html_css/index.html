@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS v5.2.1 -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> 
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="./asset/css/base.css" rel="stylesheet">
@@ -50,7 +50,7 @@
                         </div>
                     </li>
                     <li class="header__navbar-item">
-                        <span class="header__navbar-title--no-pointer">Kết nối</span>
+                        <span class="header__navbar-title--no-poiĐăng nhập</span>
                         <a href="" class="header__navbar-icon-link">
                             <i class="header__navbar_icon fa-brands fa-facebook"></i>
                         </a>
@@ -149,7 +149,7 @@
 
             </div>
             <div class="modalPopUp__body">
-            <!-- Authen form  -->
+            <!-- Registry form  -->
                 <div class="auth-from">
                     <div class="auth-form__container">
                         <div class="auth-form__header">
@@ -181,24 +181,56 @@
                     <div class="auth-form__socials">
                         <a href="#" class="btn btn--with-iconFB a-link">
                             <i class="fa-brands fa-square-facebook auth-form__icon-facebook"></i>
-                            Kết nối với Facebook
+                            &nbsp;
+                            <span class="auth-form__social-FB">Đăng nhập với Facebook</span>
                         </a>
                         <a href="#" class="btn btn--with-iconGG a-link">
-                            <i class="fa-brands fa-google"></i>
-                            Kết nối với Google
+                            <i class="fa-brands fa-google auth-form__icon-google"></i>
+                            &nbsp;
+                            <span class="auth-form__social-GG-text">Kết nối với Google</span>
                         </a>
                     </div>
                 </div>
-            </div>
-
-        </div>
-        <!-- Modal Layout -->
-        <div class="modalPopup">
-            <div class="modalPopup__overlay">
-            </div>
-            <div class="modalPopup__body">
-                <div class="modalPopup__inner">
+            <!-- Login form  -->
+                <div class="auth-from">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                            <span class="auth-form__swith-form">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            .auth-form
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls--back">TRỞ LẠI</button>
+                            <button class="btn btn--primary auth-form__controls--registry">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    <div class="auth-form__socials">
+                        <a href="#" class="btn btn--with-iconFB a-link">
+                            <i class="fa-brands fa-square-facebook auth-form__icon-facebook"></i>
+                            &nbsp;
+                            <span class="auth-form__social-FBtext">Đăng nhập với Facebook</span>
+                        </a>
+                        <a href="#" class="btn btn--with-iconGG a-link">
+                            <i class="fa-brands fa-google auth-form__icon-google"></i>
+                            &nbsp;
+                            <span class="auth-form__social-GG-text">Đăng nhập với Google</span>
+                        </a>
+                    </div>
                 </div>
+
             </div>
         </div>
         <!-- Bootstrap JavaScript Libraries -->

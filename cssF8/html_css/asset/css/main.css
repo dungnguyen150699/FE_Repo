@@ -287,7 +287,6 @@ class header_qr
 
 .auth-from{
     width: 500px;
-    
 }
 
 .auth-form__container{
@@ -361,6 +360,7 @@ class header_qr
 .auth-form__controls{
     display: flex;
     justify-content: end;
+    padding-bottom: 3.6rem;
 }
 
 .auth-form__controls--registry, .auth-form__controls--back{
@@ -390,11 +390,6 @@ class header_qr
     opacity: 0.7;
 }
 
-
-.auth-form__socials{
-    display: flex;
-}
-
 .btn--with-iconFB, .btn--with-iconGG{
     display: flex;
     padding: 1.4rem;
@@ -405,10 +400,10 @@ class header_qr
     cursor: pointer;
 }
 
-.a-link, .a-link:hover{
+/* .a-link, .a-link:hover{
     text-decoration: none;
     color: var(--primary-color);
-}
+} */
 
 /* Selector tới thẻ có cả 2 class 
     Có 3 class thì cứ chấm tiếp
@@ -418,9 +413,6 @@ class header_qr
     background-color: var(--primary-color);
 }
 
-.auth-form__icon-facebook{
-
-}
 
 /* Authen modal */
 
@@ -544,9 +536,16 @@ class header_qr
     cursor: pointer;
 }
 
-.a-link, .a-link:hover{
-    text-decoration: none;
-    color: var(--primary-color);
+.btn--with-iconFB {
+    background-color: rgb(80, 80, 233) !important;
+}
+
+.btn--with-iconGG {
+    background-color: rgb(105, 173, 202) !important;
+}
+
+.btn--with-iconFB .auth-form__social-FBtext{
+    color: var(--white-color);
 }
 
 /* Selector tới thẻ có cả 2 class 
@@ -557,13 +556,26 @@ class header_qr
     background-color: var(--primary-color);
 }
 
-.auth-form__icon-facebook{
-
+.auth-form__socials{
+    display: flex;
+    padding: 12px 36px;
+    justify-content: space-between;
+    background-color: rgb(245, 232, 232);
 }
 
-/* .header__notify-header{
-    border: inherit;
-} */
+
+/* icon */
+.auth-form__icon-facebook{
+    font-size: 20px;
+    color: var(--white-color);
+}
+
+.auth-form__icon-google{
+    font-size: 20px;
+    /* background-color: linear-gradient(red, yellow);
+    color: var(--white-color); */
+    color: linear-gradient(red, yellow);;
+}
 
 /* Animation */
 @keyframes headerNotifyGrowth{

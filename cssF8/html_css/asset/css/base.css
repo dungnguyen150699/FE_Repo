@@ -45,6 +45,7 @@ p{
     left: 0;
     bottom: 0;
     display: flex;
+    /* display: none; */
 }
 
 .modalPopUp__overlay{
@@ -69,4 +70,5 @@ p{
     /* Set ở đây cho chắc chắn */
     z-index: 1;
     border-radius: 5px;
+    overflow: hidden;
 }

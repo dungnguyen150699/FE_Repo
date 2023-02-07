@@ -1,0 +1,34 @@
+.header__navbar-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 8px 40px;
+}
+
+.header__logo{
+    display: flex;  
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.logo__tikiImg{
+    padding: 0.5rem;
+    width: 60px;
+    height: 45px;  
+}
+
+.header__navbar-search{
+    width: 678px;
+    height: 38px;
+}
+
+.header__navbar-links{
+    display: flex;
+    padding-left: 3rem;
+    justify-content: space-around;
+}
+
+.header__navbar-links .header__navbar-link{
+    padding: 8px 1rem;
+}
