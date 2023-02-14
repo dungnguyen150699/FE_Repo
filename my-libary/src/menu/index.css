@@ -1,9 +1,10 @@
 .header__navbar-list{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
-    padding: 8px 40px;
+    padding: 8px 0px;
+    margin: 0 231px;
 }
 
 .header__logo{
@@ -14,13 +15,13 @@
 }
 
 .logo__tikiImg{
-    padding: 0 0.5rem;
-    width: 70px;
+    padding:0px 40px 0px 10px;
+    width: 110px;
     height: 43px;
 }
 
 .header__navbar-search{
-    width: 678px;
+    width: 697px;
     height: 38px;
 }
 
@@ -38,40 +39,57 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 681px;
     height: 40px;
-    border: 1px solid black;
+    border: 1px solid rgb(221, 221, 227);
     border-radius: 4px;
 }
 
 .header__navbar-searchs-item{
+    width: 45px;
     padding: 0 10px 0 15px;
+    font-size: 18px;
 }
 
 .header__navbar-search
 /* , .header__navbar-search:focus */
 {
-    width: calc(681px - 48px - 91px);
+    width: 703px;
     border: none;
     outline-width: 0;
 }
 
 .header__navbar-search-button{
     padding: 0 0;
-    width: 100px;
+    width: 94px;
     height: inherit;
     background: transparent;
     outline: none;
     border: none;
+    position: relative;
+    color: rgb(10, 104, 255);
+    font-size: 1.8rem;
 }
 
-.header__navbar-search-button::before{
+.header__navbar-search-button::after{
     content: "";
-    top: 0px;
-    left: -10px;
+    top: 7px;
+    left: -2px;
     right: 0px;
-    height: 10px;
-    border: 1px solid black;
-    border-left: 1px solid rgb(221, 221, 227);
+    height: 26px;
+    border-left: 1px solid rgb(199, 199, 204);
     display: block;
+    position: absolute;
+}
+
+
+/* Animation */
+@keyframes headerNotifyGrowth{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
 }

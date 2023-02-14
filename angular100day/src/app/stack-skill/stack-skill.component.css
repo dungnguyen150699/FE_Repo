@@ -1,0 +1,11 @@
+.box{
+  height: 40px;
+  width: 100%;
+  background-color: gray;
+}
+
+
+.box__progress{
+  background-color: red;
+  height: inherit;
+}
